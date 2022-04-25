@@ -76,18 +76,25 @@ namespace RaptorMapsTestProject.StepDefinition
         {
             if (errorCode==403)
             {
+                Thread.Sleep(2000);
                 raptorMapsTechnologyPage.statusCode403.Displayed.Should().BeTrue("This verifies if 403 is displayed");
             }
             else if (errorCode==401)
             {
+                Thread.Sleep(2000);
+
                 raptorMapsTechnologyPage.statusCode401.Displayed.Should().BeTrue("This verifies if 401 is displayed");
             }
             else if (errorCode == 400)
             {
+                Thread.Sleep(2000);
+
                 raptorMapsTechnologyPage.statusCode400.Displayed.Should().BeTrue("This verifies if 400 is displayed");
             }
             else if (errorCode == 500)
             {
+                Thread.Sleep(2000);
+
                 raptorMapsTechnologyPage.statusCode500.Displayed.Should().BeTrue("This verifies if 500 is displayed");
             }
 
